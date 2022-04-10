@@ -1,0 +1,20 @@
+{
+  "name": "vue3-data-observer",
+  "version": "1.0.0",
+  "description": "vue3.0 数据劫持 简单重写",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/reactivity": "^3.2.31",
+    "html-webpack-plugin": "4.4.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
