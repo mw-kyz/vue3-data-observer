@@ -11,7 +11,18 @@ function createReactiveObject (target, baseHandler) {
     return target
   }
 
+  // 如果已被代理
+  if (target.__ob__) {
+    return target.__ob__
+  }
+
+  // console.log('-------------start------------------')
+  // console.log(target)
+  // console.log('-------------end-------------------')
+
   const observer = new Proxy(target, baseHandler)
+
+  target.__ob__ = observer
 
   return observer
 }
